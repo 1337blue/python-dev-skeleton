@@ -12,6 +12,11 @@ format-gha:
 build-docker:
 	@docker build -t $(DOCKER_IMAGE_NAME):latest .
 
+ci:
+	@$(MAKE) format-gha -C python
+	@$(MAKE) -C python lint
+	@$(MAKE) test -C python
+
 develop-docker:
 	@$(DOCKER_RUN_PREFIX) bash
 
@@ -28,7 +33,4 @@ test-docker:
 	@$(DOCKER_RUN_PREFIX) make test
 
 test:
-	@test -C python
-
-test-integration:
-	@$(MAKE) test-integration -C python
+	@$(MAKE) test -C python

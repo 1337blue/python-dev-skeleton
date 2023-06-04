@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""
+main modulue
+"""
 
-import foo
+import lib
 
-foo.hello_var("bar")
+lib.hello_var("bar")

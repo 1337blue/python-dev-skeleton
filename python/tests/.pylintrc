@@ -1,0 +1,18 @@
+
+[FORMAT]
+max-line-length=200
+
+[MESSAGES CONTROL]
+disable=
+  unexpected-keyword-arg
+
+[MISCELLANEOUS]
+# List of note tags to take in consideration, separated by a comma.
+notes=FIXME,XXX
+
+[MASTER]
+disable=
+  C0114,
+  C0115,
+  C0116,
+  R0801,
