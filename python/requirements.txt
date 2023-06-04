@@ -1,5 +1,5 @@
-backoff==1.10.0
-black==20.8b1
+backoff
+black==23.3.0
 pylint
 pytest
 pytest-cov
